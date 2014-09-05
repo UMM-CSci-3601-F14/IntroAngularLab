@@ -1,0 +1,21 @@
+{
+  "name": "IntroAngularLab",
+  "version": "0.0.0",
+  "authors": [
+    "KK Lamberty and Brian Mitchell"
+  ],
+  "description": "This is the starting point for the introductory Angular lab for 3601, Fall 2014.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-bootstrap": "~0.11.0"
+  }
+}

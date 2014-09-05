@@ -1,0 +1,28 @@
+{
+  "name": "IntroAngularLab",
+  "version": "0.0.0",
+  "description": "This is the starting point for the introductory Angular lab for 3601, Fall 2014.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UMM-CSci-3601-F14/IntroAngularLab.git"
+  },
+  "author": "KK Lamberty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UMM-CSci-3601-F14/IntroAngularLab/issues"
+  },
+  "devDependencies": {
+    "nodemon": "~1.2.1"
+  },
+  "dependencies": {
+    "bower": "~1.3.9",
+    "express": "~4.8.7",
+    "body-parser": "~1.7.0",
+    "path": "~0.4.9",
+    "hogan-express": "~0.5.2"
+  }
+}
