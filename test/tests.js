@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Wordlist = require("../public/javascripts/models/wordlist");
+var Wordlist = require("../models/wordlist");
 
 describe('Wordlist', function(){
     describe('isEmpty()', function(){

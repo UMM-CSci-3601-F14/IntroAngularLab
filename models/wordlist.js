@@ -41,4 +41,3 @@ Wordlist.prototype.remove = function (thing) {
 Wordlist.prototype.updateName = function(name) {
     this.name = name;
 };
-
