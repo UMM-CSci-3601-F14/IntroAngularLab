@@ -32,4 +32,4 @@ You will earn points for:
 
 Some resources
 ==============
-   * [[https://thinkster.io/egghead/testing-overview/][video of testing a filter]]
+   * https://thinkster.io/egghead/testing-overview/ - video of testing a filter
