@@ -18,11 +18,14 @@ How you will be graded for this lab
 ===================================
 You will earn points for:
    * (3 points) Consistent commits with pushes every-so-often
-      * Commit and push right away to make sure everything worked correctly for your clone
+      * Commit and push right away to make sure everything worked correctly for your clone.
       * Your commits shoule be small - everytime you make a test pass, everytime you add a feature, everytime you update your textual description of your code with details about the Angular... commit!
-   * (3) Good commit statements - This is a little bit subjective, but I'm looking for commits that actually explain how the project is different as a result fo the work you did
+   * (3) Good commit statements - This is a little bit subjective, but I'm looking for commits that actually explain how the project is different as a result fo the work you did.
    * (10 points) Good descriptions of five of the Angular features you included
-   * (20 points) Make use of five different Angular features - be sure to tell me which ones you wish to have graded by indicating in your description
-   * (10 points) Make tests for at least two of your Angular features
-   * (4 points) Explain a little bit about what your tests are checking
+      * These descriptions can be in the readme of your repository or in a text file in the repository.
+      * Please use a heading to name the feature you will describe and clearly indicate it is one of your five features.
+      * Please use complete sentences.
+   * (20 points) Make use of five different Angular features - be sure to tell me which ones you wish to have graded by indicating in your description.
+   * (10 points) Make tests for at least two of your Angular features.
+   * (4 points) Explain a little bit about what your tests are checking.
    * (4 points) Include a list of at least 4 resources you found useful for completing the work in this lab (1 point for each). You may include more, but you will only get points for 4.
