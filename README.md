@@ -34,17 +34,16 @@ Setup
 =====
    * Fork this project
    * Clone your forked repo to open the project in WebStorm
-   * in the terminal: npm install
-   * in the terminal: bower install (might need to be this> ./node_modules/bower/bin/bower install)
+   * in the terminal: <code>npm install</code>
+   * in the terminal: <code>bower install</code> (might need to be this> <code>./node_modules/bower/bin/bower install</code>)
    * set up nodemon:
       * A link to the github project can be found [[https://github.com/remy/nodemon][here]]
       * In this project, we have already installed nodemon, and it should be listed in package.json. If not: Install nodemon: <code>npm install --save-dev nodemon</code>
-
-----++++Configuration
-   * You need to edit your configurations to create a nodemon configuration. Click the edit configurations in the upper right of the window (or under the 'Run' menu in the menubar).
-   * Start by adding a new configuration (click the '+') with a node.js template. Set the javascript application to app.js (or server.js, depending on what you call it). You then need to have it run with the !CoffeeScript plugin (even though we are not using !CoffeeScript).
-   * Set the path to the coffee executable to /node_modules/nodemon/bin/nodemon.js
-   * Make sure you set the !CoffeeScript parameters to <code>-e html,js,css,json</code> This tells nodemon to restart the server whenever a file with one of these extensions changes. (You may want to add other extensions if you use them frequently).
+      * Configuration
+        * You need to edit your configurations to create a nodemon configuration. Click the edit configurations in the upper right of the window (or under the 'Run' menu in the menubar).
+        * Start by adding a new configuration (click the '+') with a node.js template. Set the javascript application to app.js (or server.js, depending on what you call it). You then need to have it run with the !CoffeeScript plugin (even though we are not using !CoffeeScript).
+        * Set the path to the coffee executable to /node_modules/nodemon/bin/nodemon.js
+        * Make sure you set the !CoffeeScript parameters to <code>-e html,js,css,json</code> This tells nodemon to restart the server whenever a file with one of these extensions changes. (You may want to add other extensions if you use them frequently).
 
 Some resources
 ==============
