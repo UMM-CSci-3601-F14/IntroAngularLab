@@ -37,7 +37,7 @@ Setup
    * in the terminal: <code>npm install</code>
    * in the terminal: <code>bower install</code> (might need to be this> <code>./node_modules/bower/bin/bower install</code>)
    * set up nodemon:
-      * A link to the github project can be found [[https://github.com/remy/nodemon][here]]
+      * A link to the github project can be found here: https://github.com/remy/nodemon
       * In this project, we have already installed nodemon, and it should be listed in package.json. If not: Install nodemon: <code>npm install --save-dev nodemon</code>
       * Configuration
         * You need to edit your configurations to create a nodemon configuration. Click the edit configurations in the upper right of the window (or under the 'Run' menu in the menubar).
