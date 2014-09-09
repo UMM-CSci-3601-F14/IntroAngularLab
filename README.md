@@ -29,3 +29,7 @@ You will earn points for:
    * (10 points) Make tests for at least two of your Angular features.
    * (4 points) Explain a little bit about what your tests are checking.
    * (4 points) Include a list of at least 4 resources you found useful for completing the work in this lab (1 point for each). You may include more, but you will only get points for 4.
+
+Some resources
+==============
+   * [[https://thinkster.io/egghead/testing-overview/][video of testing a filter]]
