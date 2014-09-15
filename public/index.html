@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html ng-app="todoApp">
-    <head>
-        <title></title>
+    <head lang="en">
+    <meta charset="UTF-8">
+        <title>Angular Lab</title>
+        <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/style.css">
-        <link rel="stylesheet" href="/libs/angular-bootstrap/ui-bootstrap.min.js">
         <script type="text/javascript" src="/libs/angular/angular.js" ></script>
+        <script type="text/javascript" src="/libs/angular-bootstrap/ui-bootstrap.min.js" ></script>
+        <script type="text/javascript" src="/libs/angular-bootstrap/ui-bootstrap-tpls.min.js" ></script>
         <script type="text/javascript" src="/javascripts/todo.js" ></script>
+        <script type="text/javascript" src="/javascripts/kittens.js" ></script>
     </head>
     <body>
         <h1>Angular</h1>
-        <img src="images/throh.png">
-        <div>
+        <h1><a href="kittens.html">Kittens</a></h1>
+
+        <div class="col-md-5 section">
+            <img src="images/throh.png">
+            <br />
             <label>Name:</label>
             <input type="text" ng-model="yourName" placeholder="Enter a name here">
             <h1>Hello {{yourName}}!</h1>
         </div>
-        <h2>Todo</h2>
-        <div ng-controller="TodoController">
+
+        <div class="col-md-5 col-md-offset-1 section" ng-controller="TodoController">
+            <h2>Todo</h2>
             <span>{{remaining()}} of {{todos.length}} remaining</span>
             [ <a href="" ng-click="archive()">archive</a> ]
             <ul class="unstyled">

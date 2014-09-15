@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="kittensApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Lab</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/libs/angular/angular.js" ></script>
+    <script type="text/javascript" src="/libs/angular-bootstrap/ui-bootstrap.min.js" ></script>
+    <script type="text/javascript" src="/libs/angular-bootstrap/ui-bootstrap-tpls.min.js" ></script>
+    <script type="text/javascript" src="/javascripts/todo.js" ></script>
+    <script type="text/javascript" src="/javascripts/kittens.js" ></script>
+</head>
+<body>
+<h1>Take Me <a href="/">Home</a></h1>
+    <div class="col-md-4 col-md-offset-1 section" ng-controller="CarouselDemoCtrl">
+        <h2>Kitten Carousel</h2>
+        <div style="height: 305px">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4>Slide {{$index}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+            </div>
+            <div class="col-md-6">
+                Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+                <br />Enter a negative number to stop the interval.
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-md-offset-1 section" ng-controller="DropdownCtrl">
+        <!-- Simple dropdown -->
+        <span class="dropdown" on-toggle="toggled(open)">
+          <a href class="dropdown-toggle">
+              Click me for a dropdown, yo!
+          </a>
+          <ul class="dropdown-menu">
+              <li ng-repeat="choice in items">
+                  <a href>{{choice}}</a>
+              </li>
+          </ul>
+        </span>
+
+        <!-- Single button -->
+        <div class="btn-group" dropdown is-open="status.isopen">
+            <button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+                Button dropdown <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <!-- Split button -->
+        <div class="btn-group" dropdown>
+            <button type="button" class="btn btn-danger">Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle">
+                <span class="caret"></span>
+                <span class="sr-only">Split button!</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <hr />
+        <p>
+            <button type="button" class="btn btn-default btn-sm" ng-click="toggleDropdown($event)">Toggle button dropdown</button>
+            <button type="button" class="btn btn-warning btn-sm" ng-click="disabled = !disabled">Enable/Disable</button>
+        </p>
+
+    </div>
+</body>
+</html>
