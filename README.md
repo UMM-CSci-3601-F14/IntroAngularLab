@@ -48,3 +48,9 @@ Setup
 Some resources
 ==============
    * https://thinkster.io/egghead/testing-overview/ - video of testing a filter
+
+GPA Calculator Image Examples
+=============================
+
+![A basic GPA calculator](basicGPA.png)
+![A fancy and more advanced GPA calculator](fancyGPA.png)
